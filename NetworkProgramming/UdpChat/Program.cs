@@ -1,0 +1,13 @@
+using System.Windows.Forms;
+
+namespace UdpChat;
+
+internal static class Program
+{
+    [STAThread]
+    private static void Main()
+    {
+        ApplicationConfiguration.Initialize();
+        Application.Run(new ChatForm());
+    }
+}
